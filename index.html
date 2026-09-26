@@ -129,6 +129,16 @@ footer{padding:60px 0 50px; border-top:1px solid var(--line)}
   .board .go,.board .bh span:last-child{display:none}
 }
 @media (prefers-reduced-motion:reduce){ .blink{animation:none} }
+/* campaign kit */
+.ck-g{margin-top:2.4rem}
+.ck-gh{display:flex; flex-wrap:wrap; align-items:baseline; justify-content:space-between; gap:8px 16px; border-top:1px solid var(--line); padding-top:14px}
+.ck-gh b{font-size:1.05rem}
+.ck-gh span{display:flex; gap:14px; font-size:.9rem}
+.ck-gh a{font-weight:700}
+.ck-strip{display:flex; gap:14px; overflow-x:auto; scroll-snap-type:x mandatory; padding:14px 2px 12px}
+.ck-strip figure{margin:0; flex:none; scroll-snap-align:start}
+.ck-strip img{display:block; height:min(360px,62vw); width:auto; max-width:none; border-radius:12px; border:1px solid var(--line); box-shadow:0 16px 30px -20px rgba(0,0,0,.45)}
+.ck-strip figcaption{font-size:.82rem; color:var(--muted); margin-top:8px; max-width:280px}
 </style>
 </head>
 <body>
@@ -374,6 +384,48 @@ footer{padding:60px 0 50px; border-top:1px solid var(--line)}
   document.querySelectorAll('.shot[data-img]').forEach(function(s){ var im=new Image(); im.alt=s.getAttribute('data-alt'); im.onload=function(){ s.innerHTML=''; s.appendChild(im); }; im.src=s.getAttribute('data-img'); });
 })();
 </script>
+
+<section id="campaign-kit">
+    <div class="wrap">
+      <span class="gate">6E 008 <span>CAMPAIGN KIT</span></span>
+      <h2>The campaign kit.</h2>
+      <p class="lede">Four kinds of assets I designed for this strategy, including new variations of the post series above: an Instagram carousel, Stories, widescreen pieces and a print piece. Scroll each row, or open the originals in Canva.</p>
+      <div class="ck-g">
+        <div class="ck-gh"><b>Know your rights carousel</b><span><a href="https://www.canva.com/d/KJB645Ks98AgONz" target="_blank" rel="noopener">View in Canva ↗</a><a href="canva-kit/carousel.pdf" download>PDF</a></span></div>
+        <div class="ck-strip" tabindex="0" aria-label="Know your rights carousel, scroll sideways">
+          <figure><img src="canva-kit/carousel/01.jpg" alt="Know your rights carousel, Flight cancelled?" loading="lazy"><figcaption>Flight cancelled?</figcaption></figure>
+          <figure><img src="canva-kit/carousel/02.jpg" alt="Know your rights carousel, You choose" loading="lazy"><figcaption>You choose</figcaption></figure>
+          <figure><img src="canva-kit/carousel/03.jpg" alt="Know your rights carousel, Told less than 24 hours before?" loading="lazy"><figcaption>Told less than 24 hours before?</figcaption></figure>
+          <figure><img src="canva-kit/carousel/04.jpg" alt="Know your rights carousel, Delays: the clock" loading="lazy"><figcaption>Delays: the clock</figcaption></figure>
+          <figure><img src="canva-kit/carousel/05.jpg" alt="Know your rights carousel, Lost bag?" loading="lazy"><figcaption>Lost bag?</figcaption></figure>
+          <figure><img src="canva-kit/carousel/06.jpg" alt="Know your rights carousel, Save this" loading="lazy"><figcaption>Save this</figcaption></figure>
+        </div>
+      </div>
+      <div class="ck-g">
+        <div class="ck-gh"><b>Instagram Stories</b><span><a href="https://www.canva.com/d/dPs3MQCxij64Eg4" target="_blank" rel="noopener">View in Canva ↗</a><a href="canva-kit/stories.pdf" download>PDF</a></span></div>
+        <div class="ck-strip" tabindex="0" aria-label="Instagram Stories, scroll sideways">
+          <figure><img src="canva-kit/stories/01.jpg" alt="Instagram Stories, Weekly on-time report · week 46" loading="lazy"><figcaption>Weekly on-time report · week 46</figcaption></figure>
+          <figure><img src="canva-kit/stories/02.jpg" alt="Instagram Stories, People of IndiGo: baggage" loading="lazy"><figcaption>People of IndiGo: baggage</figcaption></figure>
+          <figure><img src="canva-kit/stories/03.jpg" alt="Instagram Stories, Live update: fog at Delhi" loading="lazy"><figcaption>Live update: fog at Delhi</figcaption></figure>
+        </div>
+      </div>
+      <div class="ck-g">
+        <div class="ck-gh"><b>Airport and crisis protocol</b><span><a href="https://www.canva.com/d/OjJ3MjnsIEj4YcV" target="_blank" rel="noopener">View in Canva ↗</a><a href="canva-kit/widescreen.pdf" download>PDF</a></span></div>
+        <div class="ck-strip" tabindex="0" aria-label="Airport and crisis protocol, scroll sideways">
+          <figure><img src="canva-kit/widescreen/01.jpg" alt="Airport and crisis protocol, Departure board that gives the reason" loading="lazy"><figcaption>Departure board that gives the reason</figcaption></figure>
+          <figure><img src="canva-kit/widescreen/02.jpg" alt="Airport and crisis protocol, Crisis protocol, hour by hour" loading="lazy"><figcaption>Crisis protocol, hour by hour</figcaption></figure>
+        </div>
+      </div>
+      <div class="ck-g">
+        <div class="ck-gh"><b>Print: rights card</b><span><a href="https://www.canva.com/d/knjYKJXMb0j34Ds" target="_blank" rel="noopener">View in Canva ↗</a><a href="canva-kit/print.pdf" download>PDF</a></span></div>
+        <div class="ck-strip" tabindex="0" aria-label="Print: rights card, scroll sideways">
+          <figure><img src="canva-kit/print/01.jpg" alt="Print: rights card, Seat-pocket rights card, front and back" loading="lazy"><figcaption>Seat-pocket rights card, front and back</figcaption></figure>
+        </div>
+      </div>
+      <p style="margin-top:2rem"><a href="https://www.canva.com/d/84mWTID-NMi4Fmd" target="_blank" rel="noopener">See all my work ↗</a></p>
+      
+    </div>
+  </section>
 
 <footer>
   <div class="wrap">
